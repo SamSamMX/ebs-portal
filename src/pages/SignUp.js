@@ -56,21 +56,20 @@ function SignUp(props) {
     setSent(true);
   };
 
-
   return (
     <React.Fragment>
-      <AppAppBar lang={props.lang} />
+      <AppAppBar lang={props.lang}/>
       <AppForm>
 
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign Up
+            {props.lang.signUpTitle}
           </Typography>
 
           <Typography variant="body2" align="center">
             <Link href="/sign-in/" underline="always">
             {/* <Link to='/sign-in' underline="always"> */}
-              Already have an account?
+              {props.lang.signUpSubtitle}
             </Link>
           </Typography>
         </React.Fragment>
@@ -86,7 +85,7 @@ function SignUp(props) {
                     component={RFTextField}
                     autoComplete="cusname"
                     fullWidth
-                    label="Customer name"
+                    label={props.lang.signUpCostumerName}
                     name="customerName"
                     required
                   />
@@ -97,7 +96,7 @@ function SignUp(props) {
                     component={RFTextField}
                     autoComplete="cname"
                     fullWidth
-                    label="Company name"
+                    label={props.lang.signUpCompanyname}
                     name="companyName"
                     required
                   />
@@ -109,7 +108,7 @@ function SignUp(props) {
                     component={RFTextField}
                     autoComplete="jtitle"
                     fullWidth
-                    label="Job title"
+                    label={props.lang.signUpJobTitle}
                     name="jobTitle"
                     required
                   />
@@ -120,7 +119,7 @@ function SignUp(props) {
                     component={RFTextField}
                     autoComplete="pnumber"
                     fullWidth
-                    label="Phone number"
+                    label={props.lang.signUpPhoneNumber}
                     name="phoneNumber"
                     required
                   />
@@ -132,7 +131,7 @@ function SignUp(props) {
                 component={RFTextField}
                 disabled={submitting || sent}
                 fullWidth
-                label="Email"
+                label={props.lang.signUpEmail}
                 margin="normal"
                 name="email"
                 required
@@ -145,7 +144,7 @@ function SignUp(props) {
                 required
                 name="password"
                 autoComplete="current-password"
-                label="Password"
+                label={props.lang.signUpPassword}
                 type="password"
                 margin="normal"
               />
@@ -166,7 +165,7 @@ function SignUp(props) {
                 color="secondary"
                 fullWidth
               >
-                {submitting || sent ? 'In progress…' : 'Sign Up'}
+                {submitting || sent ? 'In progress…' : [props.lang.signUpBtnSignUp]}
               </FormButton>
             </form>
           )}
