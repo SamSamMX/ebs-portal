@@ -40,7 +40,7 @@ function SignUp(props) {
   const [sent, setSent] = React.useState(false);
 
   const validate = values => {
-    const errors = required(['firstName', 'lastName', 'email', 'password'], values);
+    const errors = required(['customerName', 'companyName', 'jobTitle', 'phoneNumber', 'email', 'password'], values);
 
     if (!errors.email) {
       const emailError = email(values.email, values);
@@ -58,7 +58,7 @@ function SignUp(props) {
 
   return (
     <React.Fragment>
-      <AppAppBar lang={props.lang}/>
+      <AppAppBar lang={props.lang} setLang={props.setLang}/>
       <AppForm>
 
         <React.Fragment>
@@ -172,10 +172,9 @@ function SignUp(props) {
         </Form>
 
       </AppForm>
-      <AppFooter lang={props.lang} />
+      <AppFooter lang={props.lang} setLang={props.setLang}/>
 
     </React.Fragment>
   );
 }
 export default SignUp;
-// export default withRoot(SignUp);
