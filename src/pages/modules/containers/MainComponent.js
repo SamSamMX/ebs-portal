@@ -79,7 +79,7 @@ const Home = () => (
             <Route path="/contact" component={Contact} />
             <Route path="/sign-in" component={() => <SignIn lang={lang} setLang={changeLanguage}/>} />
             <Route path="/sign-up" component={() => <SignUp lang={lang} setLang={changeLanguage}/>} />
-            <Route path="/forgot-password" component={ForgotPassword} />
+            <Route path="/forgot-password" component={() => <ForgotPassword lang={lang} setLang={changeLanguage}/>}/>
             <Route path="/faq" component={Faq} />
             <Route path="/privacy" component={Privacy} />
             <Route path="/terms" component={Terms} />

@@ -74,5 +74,10 @@
   "signUpPhoneNumber" : "Phone number",
   "signUpEmail" : "Email",
   "signUpPassword" : "Password",
-  "signUpBtnSignUp" : "Sign up"
+  "signUpBtnSignUp" : "Sign up",
+  "ForgotPassSTART" : "------------------------------------FORGOT PASS START-----------------------------------------",
+  "ForgotPassTitle" : "Forgot your password?",
+  "ForgotPassSubtitle" : "Enter your email address below and we'll send you a link to reset your password.",
+  "ForgotPassEmail" : "Email",
+  "ForgotPassBtnSendResetLink" : "Send reset link"
 }

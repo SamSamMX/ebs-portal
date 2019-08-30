@@ -127,7 +127,7 @@ function SignIn(props) {
         </Form>
 
         <Typography align="center">
-          <Link underline="always" href="/forgot-password/">
+          <Link underline="always" href="/forgot-password">
             {props.lang.signInLnkForgotPassword}
           </Link>
         </Typography>

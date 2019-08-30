@@ -1,5 +1,3 @@
-// import withRoot from './modules/withRoot';
-// --- Post bootstrap -----
 import React from 'react';
 import { Field, Form, FormSpy } from 'react-final-form';
 
@@ -33,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function ForgotPassword() {
+function ForgotPassword(props) {
   const classes = useStyles();
   const [sent, setSent] = React.useState(false);
 
@@ -56,17 +54,18 @@ function ForgotPassword() {
 
   return (
     <React.Fragment>
-      <AppAppBar />
+      <AppAppBar lang={props.lang} setLang={props.setLang}/>
       <AppForm>
+
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Forgot your password?
+            {props.lang.ForgotPassTitle}
           </Typography>
           <Typography variant="body2" align="center">
-            {"Enter your email address below and we'll " +
-              'send you a link to reset your password.'}
+            {props.lang.ForgotPassSubtitle}
           </Typography>
         </React.Fragment>
+
         <Form onSubmit={handleSubmit} subscription={{ submitting: true }} validate={validate}>
           {({ handleSubmit2, submitting }) => (
             <form onSubmit={handleSubmit2} className={classes.form} noValidate>
@@ -76,7 +75,7 @@ function ForgotPassword() {
                 component={RFTextField}
                 disabled={submitting || sent}
                 fullWidth
-                label="Email"
+                label={props.lang.ForgotPassEmail}
                 margin="normal"
                 name="email"
                 required
@@ -98,18 +97,18 @@ function ForgotPassword() {
                 color="secondary"
                 fullWidth
               >
-                {submitting || sent ? 'In progress…' : 'Send reset link'}
+                {submitting || sent ? 'In progress…' : [props.lang.ForgotPassBtnSendResetLink]}
               </FormButton>
             </form>
           )}
         </Form>
+
       </AppForm>
-      <AppFooter />
+
+      <AppFooter lang={props.lang} setLang={props.setLang}/>
     </React.Fragment>
   );
 }
-
-// export default withRoot(ForgotPassword);
 
 export default ForgotPassword;
 

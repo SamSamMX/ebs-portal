@@ -74,5 +74,10 @@
   "signUpPhoneNumber" : "Número telefónico",
   "signUpEmail" : "Correo electrónico",
   "signUpPassword" : "Contraseña",
-  "signUpBtnSignUp" : "Regístrate"
+  "signUpBtnSignUp" : "Regístrate",
+  "ForgotPassSTART" : "------------------------------------FORGOT PASS START-----------------------------------------",
+  "ForgotPassTitle" : "¿Olvidaste tu contraseña?",
+  "ForgotPassSubtitle" : "A continuación escribe tu dirección de correo electrónico y nosotros te enviaremos un enlace para poder resetear tu contraseña.",
+  "ForgotPassEmail" : "Correo electrónico",
+  "ForgotPassBtnSendResetLink" : "Enviar restablecer enlace"
 }
