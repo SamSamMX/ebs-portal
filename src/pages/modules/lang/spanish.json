@@ -79,5 +79,21 @@
   "ForgotPassTitle" : "¿Olvidaste tu contraseña?",
   "ForgotPassSubtitle" : "A continuación escribe tu dirección de correo electrónico y nosotros te enviaremos un enlace para poder resetear tu contraseña.",
   "ForgotPassEmail" : "Correo electrónico",
-  "ForgotPassBtnSendResetLink" : "Enviar restablecer enlace"
+  "ForgotPassBtnSendResetLink" : "Enviar restablecer enlace",
+  "contactSTART" : "---------------------------------------CONTACT START-----------------------------------------",
+  "contactTitle" : "Contacto",
+  "contactSubtitle" : "Mándanos un mensaje",
+  "contactName" : "Nombre",
+  "contactCompany" : "Compañía",
+  "contactPhoneNumber" : "Número de teléfono",
+  "contactCountry" : "País",
+  "contactEmail" : "Correo electrónico",
+  "contactMessage" : "Escriba su mensaje",
+  "contactBtnSendMessage" : "Enviar mensaje",
+  "contactAdress" : "Dirección",
+  "contactAdressDescription" : "Carretera México-Veracruz, Km. 45, El Batán,Texcoco, CP.56237",
+  "contactCommunicate" : "Comunícate",
+  "contactCommunicateDescription" : "+52 (55) 5804 2004 ó +52 (595) 952 1900",
+  "contactGeneralSupport" : "Soporte en general",
+  "contactGeneralSupportDescription" : "Rosalía Muñoz, Recepción r.munoz@cgiar.org"
 }

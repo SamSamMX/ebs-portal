@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Contact() {
+function Contact(props) {
   return (
     <div >
-        <h1>Contact Page</h1>
+        {props.content()}
+        {props.footer()}
     </div>
   );
 }

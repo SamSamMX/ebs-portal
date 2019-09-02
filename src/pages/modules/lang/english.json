@@ -79,5 +79,21 @@
   "ForgotPassTitle" : "Forgot your password?",
   "ForgotPassSubtitle" : "Enter your email address below and we'll send you a link to reset your password.",
   "ForgotPassEmail" : "Email",
-  "ForgotPassBtnSendResetLink" : "Send reset link"
+  "ForgotPassBtnSendResetLink" : "Send reset link",
+  "contactSTART" : "---------------------------------------CONTACT START-----------------------------------------",
+  "contactTitle" : "Contact",
+  "contactSubtitle" : "Send us a message",
+  "contactName" : "Name",
+  "contactCompany" : "Company",
+  "contactPhoneNumber" : "Phone number",
+  "contactCountry" : "Country",
+  "contactEmail" : "Email",
+  "contactMessage" : "Write your message",
+  "contactBtnSendMessage" : "Send message",
+  "contactAdress" : "Adress",
+  "contactAdressDescription" : "Carretera México-Veracruz, Km. 45, El Batán,Texcoco, CP.56237",
+  "contactCommunicate" : "Communicate",
+  "contactCommunicateDescription" : "+52 (55) 5804 2004 or +52 (595) 952 1900",
+  "contactGeneralSupport" : "General support",
+  "contactGeneralSupportDescription" : "Rosalia Muñoz, Reception r.munoz@cgiar.org"
 }

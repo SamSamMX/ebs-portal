@@ -27,6 +27,10 @@ import Terms from '../../Terms';
 import AboutDefinition from '../views/about/aboutDefinition';
 import AboutDomains from '../views/about/aboutDomains';
 
+// IMPORTA VISTAS PARA ABOUT
+import ContactContent from '../views/contact/ContactContent';
+
+
 // IMPORTS TRANSLATIONS JSON
 import eng from "../lang/english.json";
 import spa from "../lang/spanish.json";
@@ -75,8 +79,16 @@ const Home = () => (
                 definition={() => <AboutDefinition lang={lang} setLang={changeLanguage}/>}
                 domains={() => <AboutDomains lang={lang} setLang={changeLanguage}/>}
                 footer={() => <AppFooter lang={lang} setLang={changeLanguage}/>}
-              />}/>
-            <Route path="/contact" component={Contact} />
+              />
+            }/>
+            <Route path="/contact" component={
+              () =>
+              <Contact 
+                lang={lang}
+                content={() => <ContactContent lang={lang} setLang={changeLanguage}/>}
+                footer={() => <AppFooter lang={lang} setLang={changeLanguage}/>}
+              />
+            }/>
             <Route path="/sign-in" component={() => <SignIn lang={lang} setLang={changeLanguage}/>} />
             <Route path="/sign-up" component={() => <SignUp lang={lang} setLang={changeLanguage}/>} />
             <Route path="/forgot-password" component={() => <ForgotPassword lang={lang} setLang={changeLanguage}/>}/>
